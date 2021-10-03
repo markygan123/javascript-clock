@@ -1,10 +1,3 @@
-let hours = document.querySelector(".hour");
-let minutes = document.querySelector(".minute");
-let seconds = document.querySelector(".seconds");
-let days = document.querySelector(".days");
-let time = document.getElementById("time");
-
-
 const twentyFour = () => {
     let date = new Date();
 
