@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: black;
+    color: #8f8f8f;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    font-size: 1.4rem;
+    letter-spacing: 0.08rem;
+}
+
+.days > *,
+.hours > * {
+    display: inline-block;
+}
+
+.days {
+    text-transform: uppercase;
+}
+
+.day {
+    margin-right: 10px;
+}
+
+#sunday.currentDay,
+#monday.currentDay,
+#tuesday.currentDay,
+#wednesday.currentDay,
+#thursday.currentDay,
+#friday.currentDay,
+#saturday.currentDay {
+    color: #0cc267;
+    font-size: 1.6rem;
+}
+
+#time {
+    font-size: 7rem;
+    padding: .8em 0;
+    color: #0cc267;
+}
+
+.hours {
+    cursor: pointer;
+}
+
+.twelve-hour.active,
+.twenty-four-hour.active {
+    color: #0cc267;
+}
+
+.hours p:first-child {
+    margin-right: 40px;
+}
